@@ -1,0 +1,62 @@
+[
+  {
+    "query": "Identify suspicious transaction pattern in Sahiwal region",
+    "expected_id": "fraud_pattern_77",
+    "retrieved_ids": ["fraud_pattern_77", "risk_model_02", "loc_sahiwal_data"],
+    "rank": 1, "latency_ms": 102, "model": "Gemini 3", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "Identify suspicious transaction pattern in Sahiwal region",
+    "expected_id": "fraud_pattern_77",
+    "retrieved_ids": ["loc_sahiwal_data", "general_logs", "fraud_pattern_77"],
+    "rank": 3, "latency_ms": 195, "model": "Gemini 2.5", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "How to implement multi-tenant isolation in Pinecone?",
+    "expected_id": "arch_doc_vdb",
+    "retrieved_ids": ["arch_doc_vdb", "security_guide", "api_key_mgmt"],
+    "rank": 1, "latency_ms": 115, "model": "Gemini 3", "category": "Internal R&D", "tenant_id": "twofold_admin"
+  },
+  {
+    "query": "What is the merchant fee for international PayChain users?",
+    "expected_id": "fee_structure_intl",
+    "retrieved_ids": ["pricing_standard", "fee_structure_intl", "payout_policy"],
+    "rank": 2, "latency_ms": 98, "model": "Gemini 3", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "What is the merchant fee for international PayChain users?",
+    "expected_id": "fee_structure_intl",
+    "retrieved_ids": ["pricing_standard", "payout_policy", "tax_law_2026"],
+    "rank": 0, "latency_ms": 188, "model": "Gemini 2.5", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "Compare React functional components vs Class components",
+    "expected_id": "react_edu_01",
+    "retrieved_ids": ["react_edu_01", "hooks_guide", "lifecycle_methods"],
+    "rank": 1, "latency_ms": 105, "model": "Gemini 3", "category": "Teaching Labs", "tenant_id": "instructor_mode"
+  },
+  {
+    "query": "API endpoint for real-time fraud alerts",
+    "expected_id": "api_fraud_alerts",
+    "retrieved_ids": ["api_fraud_alerts", "webhook_docs", "auth_protocol"],
+    "rank": 1, "latency_ms": 112, "model": "Gemini 3", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "API endpoint for real-time fraud alerts",
+    "expected_id": "api_fraud_alerts",
+    "retrieved_ids": ["auth_protocol", "webhook_docs", "api_fraud_alerts"],
+    "rank": 3, "latency_ms": 172, "model": "Gemini 2.5", "category": "PayChain AI", "tenant_id": "muzamil_dev"
+  },
+  {
+    "query": "Twofold company portfolio presentation",
+    "expected_id": "twofold_pitch_2026",
+    "retrieved_ids": ["twofold_pitch_2026", "service_list", "client_testimonials"],
+    "rank": 1, "latency_ms": 108, "model": "Gemini 3", "category": "Twofold Portfolio", "tenant_id": "twofold_admin"
+  },
+  {
+    "query": "Twofold company portfolio presentation",
+    "expected_id": "twofold_pitch_2026",
+    "retrieved_ids": ["service_list", "twofold_pitch_2026", "contact_info"],
+    "rank": 2, "latency_ms": 160, "model": "Gemini 2.5", "category": "Twofold Portfolio", "tenant_id": "twofold_admin"
+  }
+]
