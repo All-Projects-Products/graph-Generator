@@ -208,6 +208,7 @@ export default function Dashboard() {
     } else {
       setCanvasBlocks([{ id: Math.random().toString(36).substring(2, 10), type }, ...canvasBlocks]);
       setMobileMenuOpen(false);
+      setHoveredTool(null);
     }
   };
 
@@ -215,6 +216,7 @@ export default function Dashboard() {
     setCanvasBlocks([{ id: Math.random().toString(36).substring(2, 10), type: pendingGraph, targetModel: model }, ...canvasBlocks]);
     setPendingGraph(null);
     setMobileMenuOpen(false);
+    setHoveredTool(null);
   };
 
   const removeGraph = (id) => setCanvasBlocks(canvasBlocks.filter(b => b.id !== id));
@@ -849,7 +851,7 @@ function Toast({ toast, setToast }) {
           initial={{ opacity: 0, y: -50, scale: 0.9 }}
           animate={{ opacity: 1, y: 24, scale: 1 }}
           exit={{ opacity: 0, y: -50, scale: 0.9 }}
-          className="fixed top-0 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 bg-surface border border-border text-text px-6 py-4 rounded-2xl shadow-2xl font-semibold"
+          className="fixed top-0 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-3 bg-surface border border-border text-text px-6 py-4 rounded-2xl shadow-2xl font-semibold"
         >
           <div className="p-1 bg-danger/10 text-danger rounded-full"><AlertCircle className="w-5 h-5" /></div>
           <span>{toast.message}</span>
